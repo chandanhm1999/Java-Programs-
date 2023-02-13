@@ -23,4 +23,4 @@ public static void main(String[] args) {
 	}
 	System.out.println("sum of all elements"+ sum);
 }
-}
+};
