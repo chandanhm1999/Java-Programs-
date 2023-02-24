@@ -1,26 +1,14 @@
-//swithch case
-
-package com.progarm3;
-
-import java.util.Scanner;
+package jan9program;
 
 public class Demo {
-public static void main(String[] args) {
-	Scanner scan = new Scanner(System.in);
-	System.out.println("Enter any number between 1-4");
-	int n = scan.nextInt();
-	switch (n)
-	{
-	case 1:
-		System.out.println("You have entered-1");
-	case 2:
-		System.out.println("You have entered-2");
-	case 3:
-		System.out.println("You have entered-3");
-	case 4:
-		System.out.println("You have entered-4");
-	default:
-		System.out.println("idiot....See the msg correctly");
-	}
+int a;
+float b;
+String c;
+
+public void display (float d) {
+	int x=10;
+	int y=20;
+	String z = "somu";
+	System.out.println(x+" "+y+" "+z);
 }
 }
