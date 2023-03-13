@@ -1,13 +1,42 @@
-package ujan10pro;
+package ujanpro;
+
+import java.util.Scanner;
 
 public class Student {
-	String name;
 	int id;
+	String name;
+	String gender;
 	int marks;
-	public Student(String a, int b, int c) {
+	int sem;
+	static Student s = null;
+	static Scanner scan = new Scanner(System.in);
+	private Student(int id, String name, String gender, int marks, int sem) {
 		super();
-		name=a;
-		id=b;
-		marks=c;
+		this.id = id;
+		this.name = name;
+		this.gender = gender;
+		this.marks = marks;
+		this.sem = sem;
+	}
+	public void eat()
+	{
+		System.out.println(name+ " is eating");
+	}
+	public void sleep()
+	{
+		System.out.println(name+ " is sleeping");
+	}
+	public void study()
+	{
+		System.out.println(name+ " is styding");
+	}
+	public static Student getStudentInstance()
+	{
+		if(s==null)
+		{
+			System.out.println("Enter id , name , gender , marks , sem");
+			s = new Student(scan.nextInt(), scan.next(), scan.next(), scan.nextInt(), scan.nextInt());
+		}
+		return s;
 	}
 }
