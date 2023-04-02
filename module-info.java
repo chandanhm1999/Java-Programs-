@@ -5,5 +5,5 @@
  * @author chand
  *
  */
-module SecondProject {
+module Programming {
 }
